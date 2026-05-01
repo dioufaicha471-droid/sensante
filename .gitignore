@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # .gitignore - Fichiers a ne PAS versionner
 
 # Environnement Python
@@ -20,3 +21,29 @@ Thumbs.db
 # Fichiers temporaires matplotlib
 *.png
 !figures/*.png
+=======
+# . gitignore - Fichiers a ne PAS versionner
+
+# Environnement Python
+__pycache__ /
+*. pyc
+venv /
+. env
+
+# Modele ML ( trop gros pour GitHub )
+models /*. pkl
+
+# Fichiers OS
+. DS_Store
+Thumbs . db
+
+# IDE
+. vscode /
+. idea /
+"venv/" 
+
+#fichiers temporaires matplotlib
+*.png
+!figures/*.png
+
+>>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
