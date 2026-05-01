@@ -17,3 +17,8 @@ Thumbs . db
 . vscode /
 . idea /
 "venv/" 
+
+#fichiers temporaires matplotlib
+*.png
+!figures/*.png
+
