@@ -5,30 +5,17 @@ Lab 1 : Git, Python et Structure Projet
 import pandas as pd
 
 # ===== CHARGER LES DONNEES =====
-<<<<<<< HEAD
-df = pd.read_csv("data/patients_dakar.csv", sep=";", encoding="latin1")
-
-=======
 df = pd.read_csv("data/patients_dakar.csv", sep=";", encoding="latin-1")
 df["temperature"] = pd.to_numeric(df["temperature"], errors="coerce")
->>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
 # ===== PREMIERS APERCUS =====
 print("=" * 50)
 print("SENSANTE - Exploration du dataset")
 print("=" * 50)
 
-<<<<<<< HEAD
-# Dimensions du dataset
-=======
->>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
 print(f"\nNombre de patients : {len(df)}")
 print(f"Nombre de colonnes : {df.shape[1]}")
 print(f"Colonnes : {list(df.columns)}")
 
-<<<<<<< HEAD
-# Apercu des 5 premieres lignes
-=======
->>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
 print(f"\n--- 5 premiers patients ---")
 print(df.head())
 
@@ -53,27 +40,9 @@ for region, count in region_counts.items():
 print(f"\n--- Temperature moyenne par diagnostic ---")
 temp_by_diag = df.groupby("diagnostic")["temperature"].mean()
 for diag, temp in temp_by_diag.items():
-<<<<<<< HEAD
-    print(f"  {diag:12s} : {temp:.1f}C")
-=======
     print(f"  {diag:12s} : {temp:.1f} C")
 
 print(f"\n{'=' * 50}")
->>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
-
-print(f"\n--- Patients par sexe et diagnostic ---")
-sexe_diag = df.groupby(["sexe", "diagnostic"]).size()
-for (sexe, diag), count in sexe_diag.items():
-    print(f"  {sexe} - {diag:12s} : {count:3d} patients")
-
 print("Exploration terminee !")
 print("Prochain lab : entrainer un modele ML")
-<<<<<<< HEAD
-print(f"{'=' * 50}")
-
-print(f"\n{'=' * 50}")
-print("Exploration terminee !")
-print("Prochain lab : entrainer un modele ML")
-=======
->>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
 print(f"{'=' * 50}")
