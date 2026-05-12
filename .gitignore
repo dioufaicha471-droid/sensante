@@ -47,3 +47,6 @@ Thumbs . db
 !figures/*.png
 
 >>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
+
+# Cles API - NE JAMAIS COMMITTER
+. env
