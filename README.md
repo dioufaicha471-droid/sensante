@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \# SenSante
 
 
@@ -81,3 +82,15 @@ Integration de Modeles IA - Dr. El Hadji Bassirou TOURE
 
 
 >>>>>>> c4bb5a6a4c10b8a087a0b92860bae8eab9ae1003
+=======
+---
+title: SenSante
+emoji: 🔥
+colorFrom: purple
+colorTo: pink
+sdk: docker
+pinned: false
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 3e3649e267cb3a4667c7c18b66f7fd74d28ceddb
